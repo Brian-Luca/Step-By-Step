@@ -1,0 +1,63 @@
+@media (max-width: 991px){
+    .au-breadcrumb {
+        margin: 0 !important;
+    }
+    .au-breadcrumb-left {
+        margin-top: 10px;
+    }
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-wrapper{
+    background-color: lavender;
+    height: 100vh;
+}
+
+.centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.borda{
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+
+.card{
+    border-radius: .25rem !important;
+    min-width: 586px;
+    min-height: 500px;
+}
+
+.card-body{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+}
+
+.join{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    width: 50%;
+    height: 300px;
+}
+
+.select{
+    font-size: 1em !important;
+}
+
+.cs-options{
+    background-color: transparent !important;
+}
+
+
+.head{
+    display: flex;
+    justify-content: center;
+}

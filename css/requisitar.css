@@ -1,0 +1,275 @@
+.main{
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.linha{
+    width: 50%;
+    height: 8px;
+    margin-top: 50px;
+    background: #ddd;
+    position: relative;
+    border-radius: 10px;
+    overflow: visible;
+    z-index: 1 !important;
+}
+
+.linha-ativo{
+    width: 33.33%;
+    height: 8px;
+    background: #7cb5ff;
+    position: absolute;
+}
+
+.string{
+    position: absolute;
+    top: -100%;
+    line-height: 25px;
+    height: 25px;
+    margin: 0;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+}
+
+.risco::before{
+    content:'';
+    position:absolute;
+    display:block;
+    top:50%;
+    height:2px;
+    width: 120%;
+    background:rgb(100, 100, 100);
+    left:50%;
+    z-index:1;
+    transform:translateX(-50%);
+    -webkit-transform:translateX(-50%);
+    
+}
+
+.ponto{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    width: 45px;
+    height: 45px;
+    left: 0;
+    background: #ddd;
+    border-radius: 50%;
+    -webkit-transition: .3s all ease;
+    transition: .3s all ease;
+    -ms-transform: translate(-50%, -50%) scale(.5);
+    transform: translate(-50%, -50%) scale(.5);
+}
+
+.desativar{
+    color: rgba(150, 150, 150, 0.8);
+    cursor: default;
+    font-size: larger;
+}
+
+.desativado{
+    color: rgba(150, 150, 150, 0.8);
+    font-size: larger;
+}
+
+.risco{
+    color: rgba(150, 150, 150, 0.8);
+}
+
+.partes{
+    position: absolute;
+    display: flex;
+    top: 5%;
+    width: 98.5%;
+}
+
+.pontinho{
+    width: 20px;
+    height: 20px;
+    background: rgb(167, 163, 163);
+    border-radius: 50%;
+}
+
+.none{
+    display: none !important;
+}
+
+.ativo{
+    background: #7cb5ff !important;
+}
+
+.ativinho{
+    background: #2282ff !important;
+}
+
+.segundo{
+    left: 33.33%;
+}
+
+.terceiro{
+    left: 66.66%;
+}
+
+.quarto{
+    left: 100%;
+}
+
+.slides{
+    height: 50vh;
+}
+
+.slide{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.tamanho{
+    font-size: .6rem;
+}
+
+.chosen-container{
+    width: 220px !important;
+}
+
+.chosen-drop{
+    height: 185px;
+}
+
+.chosen-results{
+    height: 80%;
+}
+
+.NaoVal{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.invalido{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-dialog{
+    width: 30%;
+}
+
+.fade:not(.show){
+    display: none !important;
+}
+
+.modal-footer{
+    justify-content: center !important;
+}
+
+.alerta{
+    color: rgb(231, 4, 4);
+    text-shadow: #474747 -1px 1px 0px, 2px 2px 2px rgba(206, 89, 55, 0);
+    text-align: center;
+    font-weight: 500;
+}
+
+.botoes{
+    position: relative;
+    display: flex;
+}
+
+.voltar{
+    margin-right: 4px;
+}
+
+.texto{
+    font-size: 2em;
+}
+
+.final{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+.slide4{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20%;
+    height: 75vh;
+}
+
+.off{
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    font-variant-caps: all-small-caps;
+    font-size: x-large;
+}
+
+.quad{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.TT {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .TT .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    font-size: 0.8rem;
+    background-color: rgb(255, 255, 255);
+    border: 2px black solid;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -18%;
+    left: 92%;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  .TT .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -9.5px;
+    margin-right: 2px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+  }
+  
+  .TT:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+hr{
+    margin: 5px;
+    width: 70%;
+}
+
+#validar{
+    font-size: .8rem;
+}
